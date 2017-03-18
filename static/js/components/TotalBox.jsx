@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
+import actions from '../../../actions';
 
 class TotalBox extends Component {
   constructor(props) {
@@ -15,4 +19,16 @@ class TotalBox extends Component {
   }
 }
 
-export default TotalBox;
+function mapStateToProps(state) {
+  return {
+    total: state.basket.total,
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(actions, dispatch),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TotalBox);

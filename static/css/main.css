@@ -27,6 +27,10 @@
   padding: .3em;
 }
 
+.product:hover{
+  transform:  scale(1.2);
+}
+
 .product .text-product{
   padding: .5em 1em;
   text-align: center;
@@ -35,4 +39,14 @@
 .product .text-product button{
   font-size: 1.2em;
   border-radius: 20px;
+}
+
+.remove{
+  background-color: rgb(207, 71, 41);
+  color: #fff;
+}
+
+.add{
+  background-color: rgb(95, 186, 73);
+  color: #fff;
 }
