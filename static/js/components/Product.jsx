@@ -34,7 +34,7 @@ class Product extends Component {
         <div className='text-product'>
           <h4>{this.props.name}</h4>
           <p>{this.props.currency} {this.props.price}</p>
-          {(this.props.status === 'onStore') ? <button className='add' onClick={this.handleAdd}>Add Cart</button> : <button className='remove' onClick={this.handleRemove}>Remove Cart</button>}
+          {(this.props.status === 'onStore') ? <button className='add' onClick={this.handleAdd}>Add</button> : <button className='remove' onClick={this.handleRemove}>Remove</button>}
         </div>
       </div>
     );
@@ -43,7 +43,6 @@ class Product extends Component {
 
 function mapStateToProps(state) {
   return {
-    // podria capturar el item
     items: state.basket.items,
   };
 }

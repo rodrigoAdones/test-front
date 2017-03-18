@@ -26,7 +26,7 @@ class Home extends Component {
         {/* Section with basket information */}
         <Basket />
         {/* Section with products in store */}
-        <ProductsList list={this.props.products}/>
+        <ProductsList />
       </div>
     );
   }
