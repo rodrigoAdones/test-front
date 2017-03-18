@@ -1,0 +1,38 @@
+/* you can add any styles you think could improve user's experience */
+.box-total{
+  background-color: rgb(24, 240, 220);
+  display: inline-block;
+  padding: .5em 2em;
+  border-radius: 10px;
+}
+.list{
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+.store{
+  background-color: rgb(224, 205, 35);
+}
+
+.basket{
+  background-color: rgb(10, 215, 104);
+}
+
+.product{
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: .3em;
+}
+
+.product .text-product{
+  padding: .5em 1em;
+  text-align: center;
+}
+
+.product .text-product button{
+  font-size: 1.2em;
+  border-radius: 20px;
+}
